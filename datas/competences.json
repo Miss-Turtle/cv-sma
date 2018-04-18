@@ -1,0 +1,134 @@
+{
+    "title" : "Compétences",
+    "tools" : [
+        {
+            "title" : "Développement",
+            "icon" : "fa fa-code fa-3x",
+            "details" : [
+                "HTML",
+                "CSS[SASS]",
+                "C#",
+                "PHP",
+                "SQL",
+                "jQuery",
+                "JavaScript",
+                "CSOM",
+                "SSOM",
+                "JSLink"
+            ]
+        },
+        {
+            "title" : "Framework",
+            "icon" : "fa fa-cube fa-3x",
+            "details" : [
+                ".Net",
+                "Angular",
+                "Bootstrap",
+                "Compass"
+            ]
+        },
+        {
+            "title" : "CMS/GED",
+            "icon" : "fa fa-cog fa-3x",
+            "details" : [
+                "SharePoint 2013",
+                "SharePoint Online",
+                "WordPress"
+            ]
+        },
+        {
+            "title" : "Outils développements",
+            "icon" : "fa fa-wrench fa-3x",
+            "details" : [
+                "Nintex Workflow",
+                "Nintex Forms",
+                "Powell365",
+                "SharePoint Designer",
+                "SVN",
+                "TFS",
+                "Redmine",
+                "Jenkins",
+                "BrowserStack",
+                "Gulp",
+                "Grunt",
+                "VMware",
+                "Virtual Box",
+                "Letsignit",
+                "Google Analytics"
+            ]
+        },
+        {
+            "title" : "Outils storyboards",
+            "icon" : "fas fa-clipboard-check fa-3x",
+            "details" : [
+                "Balsamiq",
+                "Axure"
+            ]
+        },
+        {
+            "title" : "Outils multimédias",
+            "icon" : "far fa-image fa-3x",
+            "details" : [
+                "Photoshop",
+                "Illustrator",
+                "InDesign",
+                "Audition",
+                "Première",
+                "Flash"
+            ]
+        },
+        {
+            "title" : "Outils bureautiques",
+            "icon" : "fab fa-microsoft fa-3x",
+            "details" : [
+                "Word",
+                "Excel",
+                "Power Point",
+                "Outlook"
+            ]
+        },
+        {
+            "title" : "Savoir-faire",
+            "icon" : "fa fa-check fa-3x",
+            "details" : [
+                "Intégration Web",
+                "Développement",
+                "Infographie"
+            ]
+        },
+        {
+            "title" : "Langues",
+            "icon" : "far fa-comments fa-3x",
+            "details" : [
+                "Anglais : bonnes notions"
+            ]
+        },
+        {
+            "title" : "Qualités personnelles",
+            "icon" : "far fa-handshake fa-3x",
+            "details" : [
+                "Impliquée",
+                "Flexible",
+                "Sociable"
+            ]
+        },
+        {
+            "title" : "Brevets / Certifications",
+            "icon" : "fas fa-certificate fa-3x",
+            "details" : [
+                "Certification Powell365 [2017]",
+                "Brevet BAFA"
+            ]
+        },
+        {
+            "title" : "Loisirs",
+            "icon" : "fas fa-gamepad fa-3x",
+            "details" : [
+                "Badminton",
+                "Films",
+                "Séries",
+                "Lecture"
+            ]
+        }
+    ]
+}

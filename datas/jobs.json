@@ -1,0 +1,164 @@
+{
+    "title" : "Expérience professionnelle",
+    "details" : [
+        {
+            "dates" : "Octobre 2016 – Avril 2018",
+            "jobTitle" : "Ingénieur d’étude",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Scala",
+            "enterpriseDescription" : "Entreprise de services numériques [+ de 140 personnes]",
+            "jobDescription" : [
+                "Intégration Web",
+                "Développement : SharePoint [2013 et Online], WordPress",
+                "Rédaction : spécifications fonctionnelles, documentations",
+                "Création : signatures mail personnalisées, storyboards",
+                "Projets : IRSN, IRSN Radon, Allegro, CD84, ..."
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    "C#", 
+                    "PHP", 
+                    "SQL", 
+                    "HTML", 
+                    "CSS [SASS]",
+                    "JavaScript", 
+                    "jQuery", 
+                    "CSOM", 
+                    "SSOM", 
+                    "JSLink",
+                    "Gulp", 
+                    "SharePoint 2013 et Online", 
+                    "WordPress",
+                    "Nintex forms", 
+                    "Nintex workflow", 
+                    "Powell365",
+                    "TFS", 
+                    "SVN", 
+                    "Redmine", 
+                    "Letsignit", 
+                    "Balsamiq",
+                    "Illustrator", 
+                    "Photoshop", 
+                    "VMware"
+                ]
+            }
+        },
+        {
+            "dates" : "Septembre 2015 – septembre 2016",
+            "jobTitle" : "Web Designer",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Scala",
+            "enterpriseDescription" : "Entreprise de services numériques [+ de 140 personnes]",
+            "jobDescription" : [
+                "Intégration Web",
+                "Rédaction : rapports Google Analytics, documentations",
+                "Création : signatures mail personnalisées, newsletters responsives, storyboards",
+                "Projets : MyMarseille, CG13, BOURBON, EPIDE, ..."
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    "PHP", 
+                    "HTML", 
+                    "CSS [LESS/SASS]", 
+                    "jQuery",
+                    "Grunt", 
+                    "Compass", 
+                    "Gulp", 
+                    "SVN", 
+                    "Drupal",
+                    "EZpublish", 
+                    "Typo3", 
+                    "WordPress", 
+                    "Symfony2",
+                    "Bootstrap", 
+                    "Illustrator", 
+                    "Photoshop", 
+                    "Google Analytics", 
+                    "Redmine", 
+                    "Letsignit", 
+                    "Axure"
+                ]
+            }
+        },
+        {
+            "dates" : "Octobre 2014 – Août 2015",
+            "jobTitle" : "Développeur Web",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Varibase",
+            "enterpriseDescription" : "Agence marketing spécialisée en stratégie relationnelle et fidélité client [+ de 15 personnes]",
+            "jobDescription" : [
+                "Intégration Web",
+                "Développement PHP/SQL",
+                "Création : newsletters responsives",
+                "Projets : Circuit Paul Ricard, Allergocercle Ménarini,..."
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    "PHP", 
+                    "SQL", 
+                    "CSS", 
+                    "HTML", 
+                    "jQuery", 
+                    "Kohana",
+                    "Litmus", 
+                    "Filezilla", 
+                    "SQLyog", 
+                    "Netbeans",
+                    "JavaScript", 
+                    "Photoshop", 
+                    "TortoiseHG", 
+                    "Selligent"
+                ]
+            }
+        },
+        {
+            "dates" : "Novembre 2013 – Juin 2014",
+            "jobTitle" : "Technicien informatique",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Hub One",
+            "enterpriseDescription" : "Groupe de service en technologie de l’information et communication [+ de 420 personnes]",
+            "jobDescription" : [
+                "Création : environnements de tests",
+                "Rédaction : documentations, tutoriels et rapports de tests"
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    "Word", 
+                    "Excel", 
+                    "CSS", 
+                    "HTML", 
+                    "Virtual Box", 
+                    "Visual Studio 2008"
+                ]
+            }
+        },
+        {
+            "dates" : "Décembre 2006 – Novembre 2012",
+            "jobTitle" : "Webmaster / Infographiste",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Shop Of The Spot",
+            "enterpriseDescription" : "Site de ventes privées spécialisé dans les sports de glisse [4 personnes]",
+            "jobDescription" : [
+                "Création : newsletters, formulaires [design et intégration], animations Flash, visuels produits"
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    "Photoshop", 
+                    "Flash", 
+                    "Audition", 
+                    "Première",
+                    "Illustrator", 
+                    "CSS", 
+                    "HTML", 
+                    "Google Analytics",
+                    "Mailperformance"
+                ]
+            }
+        }
+    ]
+}

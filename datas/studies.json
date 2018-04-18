@@ -1,0 +1,41 @@
+{
+    "title" : "Formation",
+    "details" : [
+        {
+            "years" : "2014-2016",
+            "label" : "Mastère Systèmes d’Informations & Génie Logiciel [Bac +5]"
+        },
+        {
+            "years" : "2013-2014",
+            "label" : "Bachelor Architecte informatique & Systèmes d’information [Bac +3]"
+        },
+        {
+            "years" : "2013",
+            "label" : "Formation PHP/SQL [2 mois : mai-juillet]"
+        },
+        {
+            "years" : "2005-2006",
+            "label" : "DU Concepteur Intégrateur Multimédia [Bac +2]"
+        },
+        {
+            "years" : "2003-2005",
+            "label" : "IUFM"
+        },
+        {
+            "years" : "2002-2003",
+            "label" : "Niveau Licence Histoire de l’Art"
+        },
+        {
+            "years" : "2001-2002",
+            "label" : "Licence Arts Plastiques [Bac +3]"
+        },
+        {
+            "years" : "1999-2001",
+            "label" : "DEUG Arts Plastiques [Bac +2]"
+        },
+        {
+            "years" : "1998-1999",
+            "label" : "Bac Littéraire"
+        }
+    ]
+}
