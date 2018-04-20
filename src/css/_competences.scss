@@ -1,0 +1,46 @@
+.competences {
+    display: block;
+    padding: 0 30px;
+    background-color: $colorLightGrey;
+    @include maxWidth($extraSmallBreak){
+        padding: 0 10px; 
+    }
+    @include maxWidth($largeBreak){
+        display: none;
+        margin-top: 90px;
+    }
+}
+
+.competences h3 {
+    margin: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    color: $colorMainFont;
+    @include maxWidth($extraSmallBreak){
+        font-size: 1.5em;
+    }
+}
+
+.competences-description {
+    margin-bottom: 30px;
+}
+
+.competences-description div {
+    min-height: 350px;
+    padding: 35px; 
+    background-color: $colorWhite;
+    border-radius: 3px;
+    @include maxWidth($extraSmallBreak){
+        padding: 30px 10px; 
+    }
+}
+
+.no-flexbox .competences .row {
+    display: block;
+    &::after {
+        @include mixinClear();
+    }
+    .competences-description {
+        float: left;
+    }
+}

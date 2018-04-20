@@ -1,0 +1,98 @@
+.jobs {
+    display: none;
+    padding: 0 30px;
+    background-color: $colorLightGreen;
+    @include maxWidth($extraSmallBreak){
+        padding: 0 10px; 
+    }
+    @include maxWidth($largeBreak){
+        margin-top: 90px;
+    }
+}
+
+.jobs h2 {
+    color: $colorMainFont;
+}
+
+.jobs-details {
+    margin-bottom: 20px;    
+}
+
+.jobs-details > div {    
+    background-color: $colorWhite;    
+    border-radius: 3px;
+}
+
+.jobs-details h3 {    
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $colorWhite;
+    background-color: $colorDarkGreen;
+    border-radius: 3px 3px 0 0;
+}
+
+.jobs-details h3 > svg {
+    margin-right: 15px;
+}
+
+.jobs-description > div {
+    padding: 20px;
+}
+
+.jobs-enterprise {
+    color: $colorMediumGreen;
+}
+
+.jobs-description > div > ul {
+    position: relative;
+    padding: 20px;
+}
+
+.jobs-description > div > ul > li {
+    padding: 5px;
+}
+
+.jobs-description .activity::before {
+    display: none;
+    font-family: "Font Awesome 5 Solid";   
+    content: "\f105";
+}
+
+.jobs-description .activity > svg{
+    position: absolute;
+    top: auto;
+    left: 0;
+    margin-top: 3px;
+}
+
+.jobs-description > div > ul > li > svg {
+    margin-right: 10px;
+    color: $colorMediumGreen;
+}
+
+.jobs-environnement > div {
+    height: 100%;
+    padding: 20px;
+    background-color: $colorLightGrey;
+    border-radius: 0 0 3px 0;
+    @include maxWidth($mediumBreak){
+        border-radius: 0 0 3px 3px;
+    }
+}
+
+.no-flexbox .jobs {
+    > .container {
+        padding-bottom: 20px;
+    }
+    .row {
+        display: block;
+        &::after{
+            @include mixinClear();
+        }
+        .jobs-description,
+        .jobs-environnement {
+            float: left;
+        }
+    }
+}

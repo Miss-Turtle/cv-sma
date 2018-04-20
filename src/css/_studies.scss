@@ -1,0 +1,39 @@
+.studies {
+    display: none;
+    padding: 0 30px;
+    @include maxWidth($extraSmallBreak){
+        padding: 0 10px; 
+    }
+    @include maxWidth($largeBreak){
+        margin-top: 90px;
+    }
+}
+
+.studies h3 {
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.studies-description {
+    margin-bottom: 20px;
+}
+
+.studies-description div {
+    min-height: 180px;
+    padding: 20px;
+    background-color: $colorLightGrey;
+    border-radius: 3px;
+}
+
+.no-flexbox .studies {
+    .row {
+        display: block;
+        &::after {
+            @include mixinClear();
+        }
+        .studies-description {
+            float: left;
+        }
+    }
+}

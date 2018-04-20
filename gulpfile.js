@@ -80,12 +80,28 @@ gulp.task('img', function() {
         .pipe(gulp.dest(destination + '/img'))
 });
 
+gulp.task('modernizr', function() {
+    return gulp.src(source + '/**/*.+(js|scss)')
+      .pipe(modernizr({        
+        "options" : [
+            "setClasses",
+            "addTest",
+            "html5printshiv",
+            "testProp",
+            "fnBind"
+        ],
+        'tests': ['webworkers', 'objectfit', 'flexbox', 'ie8compat', 'json', 'svg', 'cssall', 'cssanimations', 'emoji']
+      }))
+      .pipe(uglify())
+      .pipe(gulp.dest(destination + '/js'))
+});
+
 gulp.task('watch', ['css'], function() {
     browsersync.init({
         server: './'
     });
     gulp.watch(source + '/css/**/*.scss', ['css']);
-    gulp.watch(source + '/js/**/*.js', ['js']).on('change', browsersync.reload);
+    gulp.watch(source + '/js/**/*.js', ['modernizr', 'js']).on('change', browsersync.reload);
     gulp.watch(source + '/templates/**/*.hbs', ['templates']).on('change', browsersync.reload);
     gulp.watch(source + '/img/**/*.+(png|jpg|gif|svg)', ['img']).on('change', browsersync.reload);
 });

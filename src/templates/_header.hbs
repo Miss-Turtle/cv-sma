@@ -1,0 +1,38 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">   
+                <div>
+                    <h1>{{ contacts.firstName }} {{ contacts.lastName }} - CV</h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Présentation</h2>
+                            <p>Persévérante, motivée et curieuse, j'aime compléter mes savoirs pour accroître mes compétences.</p>
+                            <p>J'ai créé ce site pour présenter mes compétences, expériences et ma formation. Mais il me permet aussi de partager mes projets.</p>
+                            <p>Titulaire d'un 
+                                {{#each studies.details}}                              
+                                    {{#if (isEqual this.years '2014-2016')}}
+                                        {{this.label}} 
+                                    {{/if}}
+                                {{/each}}, 
+                                j'évolue dans le milieu de l'informatique où j'aime concevoir et élaborer des applications Web.
+                            </p> 
+                        </div>
+                        <div class="col-lg-6 contacts">
+                            <h2 class="contacts-margin-top">Mes contacts</h2>
+                            <p>
+                                <i class="far fa-envelope"></i> <span class="font-weight-bold"> : </span> <a href="{{ contacts.email }}">{{ contacts.email }}</a>
+                            </p>
+                            <p>
+                                <i class="fab fa-linkedin-in"></i> <span class="font-weight-bold"> : </span> <a href="{{ contacts.linkedin }}" target="_blank">{{ contacts.linkedin }}</a>
+                            </p>
+                            <p>    
+                                <i class="fab fa-viadeo"></i> <span class="font-weight-bold"> : </span> <a href="{{ contacts.viadeo }}" target="_blank">{{ contacts.viadeo }}</a>  
+                            </p>
+                        </div>
+                    </div>
+                </div>                           
+            </div>
+        </div>
+    </div>        
+</header>

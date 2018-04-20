@@ -1,0 +1,28 @@
+<div class="competences">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2><i class="fa fa-cogs"></i> {{competences.title}}</h2>
+            </div>
+        </div>
+        <div class="row">            
+            {{#each competences.tools}}
+                <div class="competences-description col-lg-6 col-xl-4 text-center">
+                    <div>
+                        <i class="{{this.icon}}"></i> 
+                        <h3>{{this.title}}</h3> 
+                        <p>
+                            {{#each this.details}}
+                                {{#if @last}}
+                                    {{this}}
+                                {{else}}
+                                    {{this}},
+                                {{/if}}
+                            {{/each}}
+                        </p>
+                    </div>                    
+                </div>
+            {{/each}}            
+        </div>
+    </div>    
+</div>

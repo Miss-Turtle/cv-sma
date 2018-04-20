@@ -1,0 +1,143 @@
+nav.desktop {    
+    background-color: $colorMediumGreen; 
+    border-width: 0 0 1px 0;
+    border-color: $colorWhite;
+    border-style: solid;
+    @include maxWidth($largeBreak){
+        display: none;
+    }
+
+    ul {
+        position: relative;
+    }
+
+    li {
+        float: left;
+        padding: 20px;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: $colorWhite;
+        cursor: pointer;
+    }
+
+    li.js-active,
+    li:hover {
+        background-color: $colorDarkGreen;
+    }
+
+    ul:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+nav.mobile {
+
+    .navigation-access {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $colorMediumGreen; 
+        color: $colorWhite;
+        z-index: 1;
+    }
+
+    .navigation-button {
+        width: 44px;
+        height: 44px;
+        padding: 3px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $colorWhite;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-line-nav {
+        margin: 7px 4px;
+        height: 2px;
+        background-color: $colorWhite;
+    }
+
+    .navigation-display {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;        
+        background-color: $colorMainFont;
+        color: $colorWhite;
+        z-index: 2;
+    }
+
+    .navigation-display ul {
+        position: relative;
+    }
+
+    .navigation-display li {
+        margin: 30px 0 30px 50px;
+        font-size: 1.5em;
+        font-weight: bold;
+        cursor: pointer;
+
+        &::before {
+            display: none;             
+        }
+
+        &.js-presentation::before {
+            font-family: "Font Awesome 5 Regular";  
+            content: "\f2bd";
+        }
+
+        &.js-competences::before {   
+            font-family: "Font Awesome 5 Solid";           
+            content: "\f085";
+        }
+
+        &.js-jobs::before { 
+            font-family: "Font Awesome 5 Solid"; 
+            content: "\f0f2";
+        }
+    
+        &.js-studies::before {  
+            font-family: "Font Awesome 5 Solid"; 
+            content: "\f19d";
+        }
+
+        &.js-presentation > svg,
+        &.js-competences > svg,
+        &.js-jobs > svg,
+        &.js-studies > svg {
+            position: absolute;
+            top: auto;
+            left: 0;
+        }
+    }       
+
+    .navigation-close,
+    .navigation-items {
+        padding: 20px;
+    }
+
+    .navigation-close {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: $colorMediumGreen;
+    }
+
+    .navigation-close-btn {
+        padding: 7px 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 5px;        
+        cursor: pointer;
+    }
+}

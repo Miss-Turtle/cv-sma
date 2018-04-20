@@ -1,0 +1,19 @@
+<div class="studies">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2><i class="fa fa-graduation-cap"></i> {{studies.title}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {{#each studies.details}}
+                <div class="studies-description col-md-6 col-lg-4 text-center">
+                    <div>
+                        <h3>{{this.years}}</h3>
+                        <p>{{this.label}}</p>
+                    </div>                    
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
