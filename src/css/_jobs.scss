@@ -32,7 +32,8 @@
     border-radius: 3px 3px 0 0;
 }
 
-.jobs-details h3 > svg {
+.jobs-details h3 > svg,
+.jobs-details h3 > i {
     margin-right: 15px;
 }
 
@@ -59,14 +60,16 @@
     content: "\f105";
 }
 
-.jobs-description .activity > svg{
+.jobs-description .activity > svg,
+.jobs-description .activity > i {
     position: absolute;
     top: auto;
     left: 0;
     margin-top: 3px;
 }
 
-.jobs-description > div > ul > li > svg {
+.jobs-description > div > ul > li > svg,
+.jobs-description > div > ul > li > i {
     margin-right: 10px;
     color: $colorMediumGreen;
 }

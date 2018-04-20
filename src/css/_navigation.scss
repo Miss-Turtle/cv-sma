@@ -112,9 +112,13 @@ nav.mobile {
         }
 
         &.js-presentation > svg,
+        &.js-presentation > i,
         &.js-competences > svg,
+        &.js-competences > i,
         &.js-jobs > svg,
-        &.js-studies > svg {
+        &.js-jobs > i,
+        &.js-studies > svg,
+        &.js-studies > i {
             position: absolute;
             top: auto;
             left: 0;
