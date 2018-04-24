@@ -1,0 +1,69 @@
+.projects {
+    display: none;
+    padding: 0 30px;
+    background-color: $colorLightGrey;
+    @include maxWidth($extraSmallBreak){
+        padding: 0 10px; 
+    }
+    @include maxWidth($largeBreak){
+        margin-top: 90px;
+    }
+}
+
+.projects h3,
+.projects-year {
+    margin: 30px 30px 0 30px;
+    font-size: 2em;
+    font-weight: bold;
+    color: $colorMainFont;
+    @include maxWidth($extraSmallBreak){
+        font-size: 1.5em;
+    }
+}
+
+.projects-year {
+    margin: 0 30px 30px 30px;
+    font-size: 1.5em;
+}
+
+.projects-description {
+    margin-bottom: 30px;
+}
+
+.projects-description div {
+    height: 100%;
+    padding: 35px; 
+    background-color: $colorWhite;
+    border-radius: 3px;
+    @include maxWidth($largeBreak){
+        min-height: auto;
+    }
+    @include maxWidth($extraSmallBreak){        
+        padding: 30px 10px; 
+    }
+}
+
+.projects-description-details {
+    color: $colorMediumGreen;
+}
+
+.projects-realisation {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.no-flexbox .projects .row {
+    display: block;
+    &::after {
+        @include mixinClear();
+    }
+    .projects-description {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 33.1%;
+        @include maxWidth($largeBreak){
+            max-width: 100%;
+        }
+    }
+}

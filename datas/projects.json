@@ -1,0 +1,39 @@
+{
+    "title": "Projets",
+    "details": [
+        {
+            "title": "CV SMA",
+            "year": "2018",
+            "url": "http://sandrine-martinez.fr/",
+            "description": "Site CV en HTML/CSS/JS/JSON.",
+            "realisation": [
+                "Design",
+                "Intégration",
+                "Développement",
+                "Déploiement",
+                "Maintenance"
+            ]
+        },
+        {
+            "title": "Blog SMA",
+            "year": "2018",
+            "url": "http://sandrine.martinez.10.free.fr/",
+            "description": "Blog en WordPress.",
+            "realisation": [
+                "Déploiement",
+                "Maintenance"
+            ]
+        },
+        {
+            "title": "Sparkling Lengua",
+            "year": "2014",
+            "url": "http://www.sparklinglengua.com/",
+            "description": "Site d'entreprise en WordPress.<br>[Entreprise de traduction]",
+            "realisation": [
+                "Intégration",
+                "Développement",
+                "Déploiement"
+            ]
+        }
+    ]
+}

@@ -82,46 +82,25 @@ nav.mobile {
     }
 
     .navigation-display li {
-        margin: 30px 0 30px 50px;
+        margin: 30px 0;
         font-size: 1.5em;
         font-weight: bold;
         cursor: pointer;
 
-        &::before {
-            display: none;             
+        &::after {
+            @include mixinClear();
         }
 
-        &.js-presentation::before {
-            font-family: "Font Awesome 5 Regular";  
-            content: "\f2bd";
+        > i {
+            display: block;
+            float: left;
+            margin-right: 20px;
+            width: 30px;
         }
 
-        &.js-competences::before {   
-            font-family: "Font Awesome 5 Solid";           
-            content: "\f085";
-        }
-
-        &.js-jobs::before { 
-            font-family: "Font Awesome 5 Solid"; 
-            content: "\f0f2";
-        }
-    
-        &.js-studies::before {  
-            font-family: "Font Awesome 5 Solid"; 
-            content: "\f19d";
-        }
-
-        &.js-presentation > svg,
-        &.js-presentation > i,
-        &.js-competences > svg,
-        &.js-competences > i,
-        &.js-jobs > svg,
-        &.js-jobs > i,
-        &.js-studies > svg,
-        &.js-studies > i {
-            position: absolute;
-            top: auto;
-            left: 0;
+        > div {
+            float: left;
+            width: 80%;
         }
     }       
 

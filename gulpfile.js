@@ -35,7 +35,9 @@ gulp.task('css', function() {
 gulp.task('js', function() {
     return gulp.src(source + '/js/**/*.js')
     .pipe(sourcemaps.init({largeFile: true}))
-        .pipe(babel())
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))

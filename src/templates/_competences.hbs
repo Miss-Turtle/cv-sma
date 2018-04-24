@@ -11,15 +11,18 @@
                     <div>
                         <i class="{{this.icon}}"></i> 
                         <h3>{{this.title}}</h3> 
-                        <p>
+                        <ul>
                             {{#each this.details}}
-                                {{#if @last}}
-                                    {{this}}
-                                {{else}}
-                                    {{this}},
-                                {{/if}}
+                                <li> 
+                                    <i class="fas fa-angle-right"></i>                                
+                                    {{#if @last}}
+                                        {{{this}}}
+                                    {{else}}
+                                        {{{this}}},
+                                    {{/if}}                                
+                                </li>
                             {{/each}}
-                        </p>
+                        </ul>
                     </div>                    
                 </div>
             {{/each}}            

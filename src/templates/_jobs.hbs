@@ -20,7 +20,7 @@
                                     <p class="jobs-enterprise"><span class="font-weight-bold">{{this.enterpriseTitle}} :</span> {{this.enterpriseName}} - <span class="font-italic">{{this.enterpriseDescription}}</span></p>
                                     <ul>
                                         {{#each this.jobDescription}}
-                                            <li class="activity">{{this}}</li>
+                                            <li class="activity">{{{this}}}</li>
                                         {{/each}}
                                     </ul>
                                 </div>                                
@@ -28,15 +28,75 @@
                             <div class="jobs-environnement col-md-12 col-lg-6">
                                 <div>
                                     <p class="font-weight-bold">{{this.technicalEnvironment.title}}</p>
-                                    <p>
-                                        {{#each this.technicalEnvironment.details}}
-                                            {{#if @last}}
-                                                {{this}}
-                                            {{else}}
-                                                {{this}},
-                                            {{/if}}
-                                        {{/each}}
-                                    </p>
+                                    {{#each this.technicalEnvironment.details}}
+                                        {{#if this.integration}}
+                                            <p>
+                                                <span class="font-weight-bold">
+                                                    <i class="fas fa-mobile-alt"></i> 
+                                                    <i class="fas fa-tablet-alt"></i> 
+                                                    <i class="fas fa-laptop"></i> 
+                                                    Intégration :
+                                                </span>
+                                            </p>
+                                            <ul>
+                                                {{#each this.integration}}
+                                                    <li>
+                                                        <i class="fas fa-angle-right"></i>
+                                                        {{#if @last}}
+                                                            {{{this}}}
+                                                        {{else}}
+                                                            {{{this}}},
+                                                        {{/if}}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                        {{/if}}
+                                        {{#if this.developpement}}
+                                            <p><span class="font-weight-bold"><i class="fas fa-code"></i> Développement :</span></p>
+                                            <ul>
+                                                {{#each this.developpement}}
+                                                    <li>
+                                                        <i class="fas fa-angle-right"></i>
+                                                        {{#if @last}}
+                                                            {{{this}}}
+                                                        {{else}}
+                                                            {{{this}}},
+                                                        {{/if}}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                        {{/if}}
+                                        {{#if this.design}}
+                                            <p><span class="font-weight-bold"><i class="fas fa-pencil-alt"></i> Création :</span></p>
+                                            <ul>
+                                                {{#each this.design}}
+                                                    <li>
+                                                        <i class="fas fa-angle-right"></i>
+                                                        {{#if @last}}
+                                                            {{{this}}}
+                                                        {{else}}
+                                                            {{{this}}},
+                                                        {{/if}}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                        {{/if}}
+                                        {{#if this.creation}}
+                                            <p><span class="font-weight-bold"><i class="fas fa-pencil-alt"></i> Conception :</span></p>
+                                            <ul>
+                                                {{#each this.creation}}
+                                                    <li>
+                                                        <i class="fas fa-angle-right"></i>
+                                                        {{#if @last}}
+                                                            {{{this}}}
+                                                        {{else}}
+                                                            {{{this}}},
+                                                        {{/if}}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                        {{/if}}
+                                    {{/each}}
                                 </div>
                             </div>
                         </div>

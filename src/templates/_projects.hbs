@@ -1,0 +1,26 @@
+<div class="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2><i class="fas fa-copy"></i> {{projects.title}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {{#each projects.details}}
+                <div class="projects-description col-md-12 col-lg-4 text-center">
+                    <div>
+                        <h3><a class="projects-title" href="{{this.url}}" target="_blank">{{this.title}}</a></h3>
+                        <p class="projects-year">[{{this.year}}]</p>
+                        <p class="projects-description-details font-weight-bold">{{{this.description}}}</p>
+                        <p class="font-weight-bold">Réalisation :</p>
+                        <ul class="projects-realisation">
+                            {{#each this.realisation}}
+                                <li><i class="fas fa-angle-right"></i> {{{this}}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>                    
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

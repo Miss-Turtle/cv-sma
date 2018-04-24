@@ -25,13 +25,22 @@
     margin-bottom: 30px;
 }
 
-.competences-description div {
-    min-height: 350px;
-    padding: 35px; 
-    background-color: $colorWhite;
+.competences-description div {  
+    padding: 35px 25px;
     border-radius: 3px;
-    @include maxWidth($extraSmallBreak){
+    background-color: $colorWhite;
+    height: 100%;
+    @include maxWidth($extraSmallBreak){        
         padding: 30px 10px; 
+    }
+}
+
+.competences-description ul {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    li {
+        padding-top: 20px;
     }
 }
 
@@ -41,6 +50,14 @@
         @include mixinClear();
     }
     .competences-description {
-        float: left;
+        display: inline-block;
+        vertical-align: top;
+        max-width: 33.1%;
+        @include maxWidth($extraLargeBreak){
+            max-width: 49.8%;
+        }
+        @include maxWidth($largeBreak){
+            max-width: 100%;
+        }
     }
 }

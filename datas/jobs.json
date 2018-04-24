@@ -8,39 +8,55 @@
             "enterpriseName" : "Scala",
             "enterpriseDescription" : "Entreprise de services numériques [+ de 140 personnes]",
             "jobDescription" : [
-                "Intégration Web",
-                "Développement : SharePoint [2013 et Online], WordPress",
-                "Rédaction : spécifications fonctionnelles, documentations",
-                "Création : signatures mail personnalisées, storyboards",
-                "Projets : IRSN, IRSN Radon, Allegro, CD84, ..."
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i> Intégration Web</span>",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-code\"></i> Développement :</span> SharePoint [2013 et Online], WordPress",
+                "<span class=\"font-weight-bold\"><i class=\"far fa-file-alt\"></i> Rédaction :</span> spécifications fonctionnelles, documentations",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> signatures mail personnalisées, storyboards",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-cogs\"></i> Projets :</span> IRSN, IRSN Radon, Allegro, CD84, ..."
             ],
             "technicalEnvironment" : {
                 "title" : "Environnement technique :",
                 "details" : [
-                    "C#", 
-                    "PHP", 
-                    "SQL", 
-                    "HTML", 
-                    "CSS [SASS]",
-                    "JavaScript", 
-                    "jQuery", 
-                    "CSOM", 
-                    "SSOM", 
-                    "JSLink",
-                    "Gulp", 
-                    "SharePoint 2013 et Online", 
-                    "WordPress",
-                    "Nintex forms", 
-                    "Nintex workflow", 
-                    "Powell365",
-                    "TFS", 
-                    "SVN", 
-                    "Redmine", 
-                    "Letsignit", 
-                    "Balsamiq",
-                    "Illustrator", 
-                    "Photoshop", 
-                    "VMware"
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS",
+                            "JavaScript", 
+                            "jQuery",
+                            "Gulp",
+                            "JSLink",
+                            "Powell365"
+                        ]
+                    },
+                    {
+                        "developpement" : [
+                            "SharePoint 2013 et Online", 
+                            "WordPress",
+                            "Nintex forms", 
+                            "Nintex workflow",
+                            "C#", 
+                            "PHP", 
+                            "SQL",                      
+                            "CSOM", 
+                            "SSOM", 
+                            "TFS", 
+                            "SVN", 
+                            "Redmine",                     
+                            "VMware"
+                        ]
+                    },
+                    {
+                        "design" : [
+                            "Illustrator", 
+                            "Photoshop",
+                            "Letsignit"
+                        ]
+                    },
+                    {
+                        "creation" : [                            
+                            "Balsamiq"
+                        ]
+                    }                
                 ]
             }
         },
@@ -51,34 +67,50 @@
             "enterpriseName" : "Scala",
             "enterpriseDescription" : "Entreprise de services numériques [+ de 140 personnes]",
             "jobDescription" : [
-                "Intégration Web",
-                "Rédaction : rapports Google Analytics, documentations",
-                "Création : signatures mail personnalisées, newsletters responsives, storyboards",
-                "Projets : MyMarseille, CG13, BOURBON, EPIDE, ..."
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i> Intégration Web</span>",
+                "<span class=\"font-weight-bold\"><i class=\"far fa-file-alt\"></i> Rédaction :</span> rapports Google Analytics, documentations",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> signatures mail personnalisées, newsletters responsives, storyboards",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-cogs\"></i> Projets :</span> MyMarseille, CG13, BOURBON, EPIDE, ..."
             ],
             "technicalEnvironment" : {
                 "title" : "Environnement technique :",
                 "details" : [
-                    "PHP", 
-                    "HTML", 
-                    "CSS [LESS/SASS]", 
-                    "jQuery",
-                    "Grunt", 
-                    "Compass", 
-                    "Gulp", 
-                    "SVN", 
-                    "Drupal",
-                    "EZpublish", 
-                    "Typo3", 
-                    "WordPress", 
-                    "Symfony2",
-                    "Bootstrap", 
-                    "Illustrator", 
-                    "Photoshop", 
-                    "Google Analytics", 
-                    "Redmine", 
-                    "Letsignit", 
-                    "Axure"
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS", 
+                            "jQuery",
+                            "Bootstrap", 
+                            "Grunt", 
+                            "Compass", 
+                            "Gulp", 
+                            "Drupal",
+                            "EZpublish", 
+                            "Typo3", 
+                            "WordPress", 
+                            "Symfony2"
+                        ]
+                    },
+                    {
+                            "developpement" : [
+                            "PHP",                     
+                            "SVN",
+                            "Redmine"
+                        ]
+                    },
+                    {
+                        "design" : [
+                            "Illustrator", 
+                            "Photoshop",
+                            "Letsignit"
+                        ]
+                    },
+                    {
+                        "creation" : [
+                            "Google Analytics",   
+                            "Axure"
+                        ]
+                    }                
                 ]
             }
         },
@@ -89,28 +121,44 @@
             "enterpriseName" : "Varibase",
             "enterpriseDescription" : "Agence marketing spécialisée en stratégie relationnelle et fidélité client [+ de 15 personnes]",
             "jobDescription" : [
-                "Intégration Web",
-                "Développement PHP/SQL",
-                "Création : newsletters responsives",
-                "Projets : Circuit Paul Ricard, Allergocercle Ménarini,..."
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i> Intégration Web</span>",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-code\"></i> Développement :</span> PHP/SQL",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> newsletters responsives",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-cogs\"></i> Projets :</span> Circuit Paul Ricard, Allergocercle Ménarini,..."
             ],
             "technicalEnvironment" : {
                 "title" : "Environnement technique :",
                 "details" : [
-                    "PHP", 
-                    "SQL", 
-                    "CSS", 
-                    "HTML", 
-                    "jQuery", 
-                    "Kohana",
-                    "Litmus", 
-                    "Filezilla", 
-                    "SQLyog", 
-                    "Netbeans",
-                    "JavaScript", 
-                    "Photoshop", 
-                    "TortoiseHG", 
-                    "Selligent"
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS", 
+                            "jQuery", 
+                            "JavaScript",
+                            "Litmus"
+                        ]
+                    },
+                    {
+                        "developpement" : [
+                            "Kohana",
+                            "PHP", 
+                            "SQL", 
+                            "SQLyog", 
+                            "Netbeans",
+                            "TortoiseHG", 
+                            "Filezilla"
+                        ]
+                    },
+                    {
+                        "design" : [
+                            "Photoshop"
+                        ]
+                    },
+                    {
+                        "creation" : [                        
+                            "Selligent"
+                        ]
+                    }               
                 ]
             }
         },
@@ -121,18 +169,35 @@
             "enterpriseName" : "Hub One",
             "enterpriseDescription" : "Groupe de service en technologie de l’information et communication [+ de 420 personnes]",
             "jobDescription" : [
-                "Création : environnements de tests",
-                "Rédaction : documentations, tutoriels et rapports de tests"
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> environnements de tests",
+                "<span class=\"font-weight-bold\"><i class=\"far fa-file-alt\"></i> Rédaction :</span> documentations, tutoriels et rapports de tests"
             ],
             "technicalEnvironment" : {
                 "title" : "Environnement technique :",
                 "details" : [
-                    "Word", 
-                    "Excel", 
-                    "CSS", 
-                    "HTML", 
-                    "Virtual Box", 
-                    "Visual Studio 2008"
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS"
+                        ]
+                    },
+                    {
+                        "developpement" : [
+                            "Virtual Box", 
+                            "Visual Studio 2008"
+                        ]
+                    },
+                    {
+                        "design" : [
+
+                        ]
+                    },
+                    {
+                        "creation" : [
+                            "Word", 
+                            "Excel"
+                        ] 
+                    }               
                 ]
             }
         },
@@ -143,20 +208,37 @@
             "enterpriseName" : "Shop Of The Spot",
             "enterpriseDescription" : "Site de ventes privées spécialisé dans les sports de glisse [4 personnes]",
             "jobDescription" : [
-                "Création : newsletters, formulaires [design et intégration], animations Flash, visuels produits"
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> newsletters, formulaires [design et intégration], animations Flash, visuels produits"
             ],
             "technicalEnvironment" : {
                 "title" : "Environnement technique :",
                 "details" : [
-                    "Photoshop", 
-                    "Flash", 
-                    "Audition", 
-                    "Première",
-                    "Illustrator", 
-                    "CSS", 
-                    "HTML", 
-                    "Google Analytics",
-                    "Mailperformance"
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS"
+                        ]
+                    },
+                    {
+                        "developpement" : [
+                            
+                        ]
+                    },
+                    {
+                        "design" : [
+                            "Photoshop", 
+                            "Illustrator",
+                            "Flash", 
+                            "Audition", 
+                            "Première"
+                        ]
+                    },
+                    {
+                        "creation" : [                            
+                            "Google Analytics",
+                            "Mailperformance"
+                        ]
+                    }                
                 ]
             }
         }

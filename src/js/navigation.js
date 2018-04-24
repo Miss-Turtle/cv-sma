@@ -1,66 +1,47 @@
 // Navigation
 (function( $ ) {
     $(document).ready(function(){   
+        var isCompetencesVisible = $('.competences').is(':visible');
+        var isJobsVisible = $('.jobs').is(':visible');
+        var isStudiesVisible = $('.studies').is(':visible');
+        var isProjectsVisible = $('.projects').is(':visible');
+        var itemsContentsMobile = [
+            'header',
+            'competences',
+            'jobs',
+            'studies',
+            'projects'
+        ];
+        var itemsNavigation = [
+            'js-header',
+            'js-competences',
+            'js-jobs',
+            'js-studies',
+            'js-projects'
+        ];
+        var itemsContentsDesktop = itemsContentsMobile.map(x => x);
+        itemsContentsDesktop.shift();
+
         // Verify the window width and make appear header if it's large break
-        $(window).resize(function(){
-            var isCompetencesVisible = $('.competences').is(':visible');
-            var isJobsVisible = $('.jobs').is(':visible');
-            var isStudiesVisible = $('.studies').is(':visible');
-            if($('nav.desktop').is(':visible')){
-                $('header').fadeIn('slow');
-                if(!isCompetencesVisible && !isJobsVisible && !isStudiesVisible){
-                    $('nav.desktop li.js-competences').addClass('js-active');
-                    $('.competences').fadeIn('slow');
-                } 
-                if(isJobsVisible || isStudiesVisible){
-                    $('nav.desktop li.js-competences').removeClass('js-active');
-                    $('.competences').fadeOut('slow');
-                    if(isJobsVisible){
-                        $('nav.desktop li.js-jobs').addClass('js-active');
-                    }
-                    if(isStudiesVisible){
-                        $('nav.desktop li.js-studies').addClass('js-active');
-                    }
-                }
-                if(isCompetencesVisible){
-                    $('nav.desktop li.js-competences').addClass('js-active');
-                }    
-                if(isJobsVisible){
-                    $('nav.desktop li.js-jobs').addClass('js-active');
-                } 
-                if(isStudiesVisible){
-                    $('nav.desktop li.js-studies').addClass('js-active');
-                } 
+        $(window).resize(function(){   
+            $(window).scrollTop(0);       
+            $('header').css({'display': 'block'});            
+            for(var i = 0; i < itemsNavigation.length; i++){
+                $('nav.desktop li.' + itemsNavigation[i]).removeClass('js-active');
+            }      
+            for(var i = 0; i < itemsContentsDesktop.length; i++){
+                $('.' + itemsContentsDesktop[i]).css({'display': 'none'});
             } 
-            if($('nav.mobile').is(':visible')) {                
-                if(isCompetencesVisible || isJobsVisible || isStudiesVisible){
-                    $('header').fadeOut('slow');
-                }     
-                $('nav.desktop li.js-competences').removeClass('js-active');
-                $('nav.desktop li.js-jobs').removeClass('js-active');
-                $('nav.desktop li.js-studies').removeClass('js-active');                       
-            }
+            if($('nav.desktop').is(':visible')){                             
+                $('nav.desktop li.js-competences').addClass('js-active');
+                $('.competences').css({'display': 'block'});
+            } 
         });           
 
         // Navigation desktop active list on click
         $('#main').on('click', 'nav.desktop li' , function(){
             $('nav.desktop li').removeClass('js-active');
-            $(this).addClass('js-active');
-            if($(this).hasClass('js-competences')){
-                $('.competences').fadeIn('slow');
-                $('.jobs').fadeOut('slow');
-                $('.studies').fadeOut('slow');
-            }
-            if($(this).hasClass('js-jobs')){
-                $('.competences').fadeOut('slow');
-                $('.jobs').fadeIn('slow');
-                $('.studies').fadeOut('slow');
-            }
-            if($(this).hasClass('js-studies')){
-                $('.competences').fadeOut('slow');
-                $('.jobs').fadeOut('slow');
-                $('.studies').fadeIn('slow');
-            }
+            throwContentNavigationToShowOrHide(itemsNavigation, itemsContentsDesktop, $(this), false);
         });    
         
         // Open navigation mobile
@@ -72,37 +53,40 @@
         $('#main').on('click', 'nav.mobile .navigation-close-btn' , function(){
             $('.navigation-display').fadeOut('slow');
         });
+        
+        showContentOnClickForMobileNavigation(itemsNavigation, itemsContentsMobile, 'nav.mobile li', '#main', '.navigation-display');
 
-        // Navigation desktop active list on click
-        $('#main').on('click', 'nav.mobile li' , function(){
-            if($(this).hasClass('js-presentation')){
-                $('.navigation-display').fadeOut('slow');
-                $('header').fadeIn('slow');
-                $('.competences').fadeOut('slow');
-                $('.jobs').fadeOut('slow');
-                $('.studies').fadeOut('slow');
+        //------------------------------------------------------------------------------------------------------------------------
+        // Functions
+        //------------------------------------------------------------------------------------------------------------------------
+
+        // Show content element on click for mobile navigation and hide others elements
+        function showContentOnClickForMobileNavigation(items, contents, selectorItemClick, selectorMain, selectorNavigationDisplay){
+            $(selectorMain).on('click', selectorItemClick , function(){
+                $(selectorNavigationDisplay).fadeOut('slow');
+                throwContentNavigationToShowOrHide(items, contents, $(this), true);
+            });
+        }
+
+        // Throw the items navigation to compare if have selected class on click for hide or show content
+        function throwContentNavigationToShowOrHide(items, contents, selectorElementOnClick, mobile){            
+            if(mobile != true){
+                selectorElementOnClick.addClass('js-active');
+            } else {
+                $(window).scrollTop(0);
+            }   
+            for(var i = 0; i < items.length; i++){
+                if(selectorElementOnClick.hasClass(items[i])){
+                    for(var j = 0; j < contents.length; j++){       
+                        var selector = "." + contents[j];                
+                        if(items[i].indexOf(contents[j]) > 0){                     
+                            $(selector).fadeIn('slow');                                
+                        } else {
+                            $(selector).fadeOut('slow'); 
+                        }                        
+                    }
+                }
             }
-            if($(this).hasClass('js-competences')){
-                $('.navigation-display').fadeOut('slow');
-                $('header').fadeOut('slow');
-                $('.competences').fadeIn('slow');
-                $('.jobs').fadeOut('slow');
-                $('.studies').fadeOut('slow');
-            }
-            if($(this).hasClass('js-jobs')){
-                $('.navigation-display').fadeOut('slow');
-                $('header').fadeOut('slow');
-                $('.competences').fadeOut('slow');
-                $('.jobs').fadeIn('slow');
-                $('.studies').fadeOut('slow');
-            }
-            if($(this).hasClass('js-studies')){
-                $('.navigation-display').fadeOut('slow');
-                $('header').fadeOut('slow');
-                $('.competences').fadeOut('slow');
-                $('.jobs').fadeOut('slow');
-                $('.studies').fadeIn('slow'); 
-            } 
-        });    
-    });
+        }
+    });    
 })(jQuery); 
