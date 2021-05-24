@@ -1,6 +1,6 @@
 // Navigation
 (function( $ ) {
-    $(document).ready(function(){   
+    $(function(){   
         var isCompetencesVisible = $('.competences').is(':visible');
         var isJobsVisible = $('.jobs').is(':visible');
         var isStudiesVisible = $('.studies').is(':visible');

@@ -1,6 +1,6 @@
 // Templates HBS
 (function( $ ) {
-    $(document).ready(function(){           
+    $(function(){           
         $.when(
             $.ajax({  
                 dataType: "json",

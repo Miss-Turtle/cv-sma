@@ -99,9 +99,7 @@ gulp.task('modernizr', function() {
 });
 
 gulp.task('watch', ['css'], function() {
-    browsersync.init({
-        server: './'
-    });
+    browsersync.init({ server: './' });
     gulp.watch(source + '/css/**/*.scss', ['css']);
     gulp.watch(source + '/js/**/*.js', ['modernizr', 'js']).on('change', browsersync.reload);
     gulp.watch(source + '/templates/**/*.hbs', ['templates']).on('change', browsersync.reload);

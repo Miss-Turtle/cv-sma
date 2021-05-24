@@ -5,17 +5,21 @@
             "title" : "Savoir-faire",
             "icon" : "fa fa-check fa-3x",
             "details" : [
-                "Intégration Web <i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i>",
-                "Développement <i class=\"fas fa-code\"></i>",
-                "Infographie <i class=\"far fa-image\"></i>",
+                "Prise de besoin client <i class=\"far fa-address-card\"></i>",
                 "Storyboards <i class=\"fas fa-sitemap\"></i>",
-                "Documentation fonctionnelle <i class=\"far fa-file-alt\"></i>"
+                "Documentation fonctionnelle <i class=\"far fa-file-alt\"></i>",
+                "Documentation technique <i class=\"far fa-file-alt\"></i>",
+                "Intégration Web <i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i>",
+                "Développement, tests unitaires et globaux <i class=\"fas fa-code\"></i>",
+                "Infographie <i class=\"far fa-image\"></i>",
+                "Support et assistance utilisateurs <i class=\"far fa-question-circle\"></i>"
             ]
         },     
         {
             "title" : "Brevets / Certifications",
             "icon" : "fas fa-certificate fa-3x",
             "details" : [
+                "PL-900: Microsoft Power Platform Fundamentals [2020] <i class=\"fab fa-microsoft\"></i>",
                 "Certification Powell365 [2017]",
                 "Brevet BAFA"
             ]
@@ -25,7 +29,7 @@
             "icon" : "far fa-handshake fa-3x",
             "details" : [
                 "Impliquée",
-                "Flexible",
+                "Attentive",
                 "Sociable"
             ]
         },   
@@ -33,41 +37,41 @@
             "title" : "Outils storyboards",
             "icon" : "fas fa-clipboard-check fa-3x",
             "details" : [
+                "AdobeXD  <i class=\"fas fa-sitemap\"></i>",
                 "Balsamiq <i class=\"fas fa-sitemap\"></i>",
-                "Axure <i class=\"fas fa-sitemap\"></i>"
+                "Axure <i class=\"fas fa-sitemap\"></i>"             
             ]
         },
         {
             "title" : "Frameworks",
             "icon" : "fa fa-cube fa-3x",
             "details" : [
-                ".Net",
-                "Angular <i class=\"fab fa-angular\"></i>",
-                "Bootstrap",
-                "Compass <i class=\"far fa-compass\"></i>"
+                "SPFX",
+                "Bootstrap <i class=\"fab fa-bootstrap\"></i>",
+                "React <i class=\"fab fa-react\"></i>",
+                "KnockOut",
+                "Angular <i class=\"fab fa-angular\"></i>"
             ]
         },
         {
             "title" : "CMS/GED",
             "icon" : "fa fa-cog fa-3x",
-            "details" : [
-                "SharePoint 2013",
+            "details" : [            
                 "SharePoint Online",
+                "SharePoint 2013",
                 "WordPress <i class=\"fab fa-wordpress-simple\"></i>"
             ]
         }, 
         {
-            "title" : "Languages",
+            "title" : "Languages [code]",
             "icon" : "fa fa-code fa-3x",
             "details" : [
                 "HTML <i class=\"fab fa-html5\"></i>",
                 "CSS <i class=\"fab fa-css3-alt\"></i>",
-                "SASS <i class=\"fab fa-sass\"></i>",
-                "C#",
-                "PHP <i class=\"fab fa-php\"></i>",
-                "SQL <i class=\"fas fa-database\"></i>",
-                "jQuery",
+                "SASS <i class=\"fab fa-sass\"></i>",  
                 "JavaScript <i class=\"fab fa-js\"></i>",
+                "jQuery",
+                "TypeScript",                              
                 "CSOM",
                 "SSOM",
                 "JSLink"
@@ -77,32 +81,20 @@
             "title" : "Outils développements",
             "icon" : "fa fa-wrench fa-3x",
             "details" : [
-                "Nintex Workflow",
-                "Nintex Forms",
+                "Power Automate",
+                "Power Apps [notions car peu de pratique de l'outil actuellement]",
                 "Powell365",
-                "SharePoint Designer",
-                "SVN <i class=\"fas fa-code-branch\"></i>",
-                "TFS <i class=\"fas fa-code-branch\"></i>",
-                "Redmine",
-                "Jenkins <i class=\"fab fa-jenkins\"></i>",
-                "BrowserStack <i class=\"fab fa-safari\"></i> <i class=\"fab fa-internet-explorer\"></i> <i class=\"fab fa-firefox\"></i> <i class=\"fab fa-edge\"></i> <i class=\"fab fa-chrome\"></i>",
-                "Gulp <i class=\"fab fa-gulp\"></i>",
-                "VMware",
-                "Virtual Box",
-                "Letsignit : création de campagne de signature pour Outlook",
-                "Google Analytics <i class=\"fab fa-google\"></i>"
+                "Git <i class=\"fab fa-git\"></i>",
+                "Gulp <i class=\"fab fa-gulp\"></i>"
             ]
         },        
         {
             "title" : "Outils multimédias",
             "icon" : "far fa-image fa-3x",
             "details" : [
-                "Photoshop",
+                "AdobeXD",
                 "Illustrator",
-                "InDesign",
-                "Audition",
-                "Première",
-                "Flash"
+                "Photoshop"                               
             ]
         },
         {
@@ -119,14 +111,14 @@
             "title" : "Langues",
             "icon" : "far fa-comments fa-3x",
             "details" : [
-                "<strong>Anglais <i class=\"fas fa-language\"></i>:</strong> lu et écrit"
+                "<strong>Anglais <i class=\"fas fa-language\"></i>:</strong> lu, écrit, parlé"
             ]
         }, 
         {
             "title" : "Loisirs",
             "icon" : "fas fa-gamepad fa-3x",
             "details" : [
-                "Badminton",
+                "Badminton <i class=\"fas fa-table-tennis\"></i>",
                 "Films <i class=\"fas fa-film\"></i>",
                 "Séries <i class=\"fas fa-tv\"></i>",
                 "Lecture <i class=\"fas fa-book\"></i>"

@@ -2,6 +2,48 @@
     "title" : "Expérience professionnelle",
     "details" : [
         {
+            "dates" : "Septembre 2018 - ...",
+            "jobTitle" : "Consultante",
+            "enterpriseTitle" : "Entreprise",
+            "enterpriseName" : "Exakis-Nelite",
+            "enterpriseDescription" : "Entité du groupe Magellan Partners, est le premier partenaire pure-player Microsoft indépendant en France [environ 500 personnes]",
+            "jobDescription" : [
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-mobile-alt\"></i> <i class=\"fas fa-tablet-alt\"></i> <i class=\"fas fa-laptop\"></i> Intégration Web</span>",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-code\"></i> Développement :</span> SharePoint [Online], Power Automate",
+                "<span class=\"font-weight-bold\"><i class=\"far fa-file-alt\"></i> Rédaction :</span> spécifications fonctionnelles et techniques",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-pencil-alt\"></i> Création :</span> storyboards",
+                "<span class=\"font-weight-bold\"><i class=\"fas fa-cogs\"></i> Projets :</span> CMA CGM, SOMEI, ..."
+            ],
+            "technicalEnvironment" : {
+                "title" : "Environnement technique :",
+                "details" : [
+                    {
+                        "integration" : [
+                            "HTML", 
+                            "CSS/SASS",
+                            "JavaScript/TypeScript", 
+                            "SPFX",
+                            "Gulp",
+                            "KnockOut",
+                            "Powell365"
+                        ]
+                    },
+                    {
+                        "developpement" : [
+                            "SharePoint Online [Powell 365/SPFX]", 
+                            "Power Automate"
+                        ]
+                    },
+                    {
+                        "creation" : [   
+                            "AdobeXD",                         
+                            "Balsamiq"
+                        ]
+                    }   
+                ]
+            }
+        },
+        {
             "dates" : "Octobre 2016 – Avril 2018",
             "jobTitle" : "Ingénieur d’étude",
             "enterpriseTitle" : "Entreprise",
