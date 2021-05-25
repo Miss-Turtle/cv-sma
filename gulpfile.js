@@ -19,7 +19,7 @@ var browsersync = require('browser-sync').create();
 var source = './src';
 var destination = './dist';
 
-gulp.task('css', function() {
+function styles() {
     return gulp.src(source + '/css/**/*.scss')
     .pipe(sourcemaps.init({largeFile: true}))
         .pipe(sass().on('error', sass.logError))
@@ -30,9 +30,9 @@ gulp.task('css', function() {
     .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest(destination + '/css'))
     .pipe(browsersync.stream());
-});
+};
 
-gulp.task('js', function() {
+function scripts() {
     return gulp.src(source + '/js/**/*.js')
     .pipe(sourcemaps.init({largeFile: true}))
         .pipe(babel({
@@ -43,9 +43,9 @@ gulp.task('js', function() {
         .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest(destination + '/js'));
-});
+};
 
-gulp.task('templates', function() {
+function templates() {
     var partials = gulp.src(source + '/templates/_*.hbs')
         .pipe(handlebars())
         .pipe(wrap('Handlebars.registerPartial(<%= processPartialName(file.relative) %>, Handlebars.template(<%= contents %>));', {}, {
@@ -74,15 +74,15 @@ gulp.task('templates', function() {
             .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('/maps'))
         .pipe(gulp.dest(destination + '/templates/'));
-});
+};
 
-gulp.task('img', function() {
+function img() {
     return gulp.src(source + '/img/**/*.+(png|jpg|jpeg|gif|svg)')
         .pipe(imagemin())
         .pipe(gulp.dest(destination + '/img'))
-});
+};
 
-gulp.task('modernizr', function() {
+function modernizr() {
     return gulp.src(source + '/**/*.+(js|scss)')
       .pipe(modernizr({        
         "options" : [
@@ -96,12 +96,22 @@ gulp.task('modernizr', function() {
       }))
       .pipe(uglify())
       .pipe(gulp.dest(destination + '/js'))
-});
+};
 
-gulp.task('watch', ['css'], function() {
+function watch() {
     browsersync.init({ server: './' });
-    gulp.watch(source + '/css/**/*.scss', ['css']);
-    gulp.watch(source + '/js/**/*.js', ['modernizr', 'js']).on('change', browsersync.reload);
-    gulp.watch(source + '/templates/**/*.hbs', ['templates']).on('change', browsersync.reload);
-    gulp.watch(source + '/img/**/*.+(png|jpg|gif|svg)', ['img']).on('change', browsersync.reload);
-});
+    gulp.watch(source + '/css/**/*.scss', styles);
+    gulp.watch(source + '/js/**/*.js', scripts).on('change', browsersync.reload);
+    gulp.watch(source + '/js/**/*.js', modernizr).on('change', browsersync.reload);
+    gulp.watch(source + '/templates/**/*.hbs', templates).on('change', browsersync.reload);
+    gulp.watch(source + '/img/**/*.+(png|jpg|gif|svg)', img).on('change', browsersync.reload);
+};
+
+var watch = gulp.series(watch, gulp.parallel(styles, scripts, templates, img, modernizr));
+
+exports.styles = styles;
+exports.scripts = scripts;
+exports.templates = templates;
+exports.img = img;
+exports.modernizr = modernizr;
+exports.watch = watch;
